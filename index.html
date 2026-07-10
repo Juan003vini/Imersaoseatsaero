@@ -65,6 +65,17 @@ fbq('track', 'PageView');
   .hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(37,99,235,0.05) 0px,rgba(37,99,235,0.05) 1px,transparent 1px,transparent 80px);pointer-events:none;}
   .hero-inner{max-width:760px;margin:0 auto;text-align:center;position:relative;z-index:1;}
   .urgency-bar{display:inline-flex;align-items:center;gap:8px;background:rgba(37,99,235,0.14);border:1px solid rgba(37,99,235,0.4);color:var(--gold-light);font-size:12.5px;font-weight:700;padding:9px 20px;border-radius:100px;margin-bottom:22px;}
+  .top-banner{
+    position:sticky;top:0;left:0;right:0;z-index:60;
+    background:#f4f7fc;color:var(--gold);
+    text-align:center;padding:12px 16px;
+    font-size:13px;font-weight:800;letter-spacing:.2px;
+    border-bottom:2px solid var(--gold);
+  }
+  .top-banner span{color:var(--gold);}
+  @media(max-width:640px){
+    .top-banner{font-size:12px;padding:10px 14px;}
+  }
   .hero-eyebrow{font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(244,239,228,0.6);margin-bottom:18px;}
   .hero-eyebrow .dot{display:inline-block;width:6px;height:6px;background:var(--green-light);border-radius:50%;margin:0 8px;animation:pulse 1.8s infinite;}
   @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
@@ -225,17 +236,17 @@ fbq('track', 'PageView');
 </head>
 <body>
 
+<div class="top-banner">🔥 Somente nos próximos dias você terá um desconto de <span>71%</span></div>
+
 <!-- ================= HERO ================= -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="urgency-bar">🔥 Somente nos próximos dias você terá um desconto de 71%</div>
     <div class="hero-eyebrow">Imersão ao vivo <span class="dot"></span> 25 de julho <span class="dot"></span> 08h30</div>
     <h1>Domine o <em>Seats.aero</em>: a ferramenta que te mostra passagens até 70% mais baratas no mundo todo</h1>
     <p class="hero-sub">
-      Junte-se a mim, <strong>David (Milhas do Zero)</strong>, numa imersão prática e 100% ao vivo. Vou abrir
-      minha tela e te mostrar, na prática, como uso o <strong>Seats.aero</strong> — a ferramenta mais famosa do
-      mercado de milhas — pra achar passagens de executiva pelo preço de econômica. O conhecimento que você
-      precisa pra viajar mais barato pelo resto da vida, por menos de R$50.
+      Numa imersão prática e 100% ao vivo, vou abrir minha tela e te mostrar, na prática, como uso o
+      <strong>Seats.aero</strong> — a ferramenta mais famosa do mercado de milhas — pra achar passagens de
+      executiva pelo preço de econômica. O conhecimento que você precisa pra viajar mais barato pelo resto da vida.
     </p>
     <div class="hero-cta-wrap">
       <a href="#oferta" class="btn-cta">QUERO GARANTIR MINHA VAGA →</a>
