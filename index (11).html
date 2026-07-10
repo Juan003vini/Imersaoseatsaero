@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imersão Seats.aero — pague até 70% a menos em passagens aéreas</title>
+
+<!-- UTMify -->
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck></script>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1946863366081314');
+fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1946863366081314&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --deep: #0a1730;
+    --deep-2: #0f2244;
+    --green: #1d4ed8;
+    --green-light: #3b82f6;
+    --gold: #2563eb;
+    --gold-light: #60a5fa;
+    --cream: #f4f7fc;
+    --text-dark: #0f1b2d;
+    --text-mid: #53617a;
+    --shadow: rgba(10,23,48,0.12);
+    --red-soft: #a35c5c;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Sora',sans-serif;background:var(--cream);color:var(--text-dark);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  section{padding:76px 20px;}
+  .wrap{max-width:1080px;margin:0 auto;}
+  .section-label{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:12px;}
+  .section-title{font-family:'Spectral',serif;font-size:clamp(26px,5vw,42px);font-weight:800;text-align:center;color:var(--text-dark);line-height:1.18;margin-bottom:16px;}
+  .section-desc{text-align:center;color:var(--text-mid);font-size:15.5px;line-height:1.7;max-width:600px;margin:0 auto 48px;}
+
+  .btn-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--gold-light),var(--gold));color:#0a1730;font-weight:800;font-size:17px;padding:18px 36px;border-radius:10px;text-decoration:none;box-shadow:0 12px 30px rgba(37,99,235,0.35);transition:transform .2s,box-shadow .2s;border:none;cursor:pointer;}
+  .btn-cta:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(37,99,235,0.45);}
+  .cta-sub{display:block;text-align:center;margin-top:12px;font-size:13px;color:var(--text-mid);font-weight:500;}
+
+  /* ===== HERO ===== */
+  .hero{background:radial-gradient(ellipse at 20% -10%,rgba(59,130,246,0.35),transparent 60%),linear-gradient(180deg,var(--deep) 0%,var(--deep-2) 100%);color:var(--cream);padding:56px 20px 0;position:relative;overflow:hidden;}
+  .hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(37,99,235,0.05) 0px,rgba(37,99,235,0.05) 1px,transparent 1px,transparent 80px);pointer-events:none;}
+  .hero-inner{max-width:760px;margin:0 auto;text-align:center;position:relative;z-index:1;}
+  .urgency-bar{display:inline-flex;align-items:center;gap:8px;background:rgba(37,99,235,0.14);border:1px solid rgba(37,99,235,0.4);color:var(--gold-light);font-size:12.5px;font-weight:700;padding:9px 20px;border-radius:100px;margin-bottom:22px;}
+  .hero-eyebrow{font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(244,239,228,0.6);margin-bottom:18px;}
+  .hero-eyebrow .dot{display:inline-block;width:6px;height:6px;background:var(--green-light);border-radius:50%;margin:0 8px;animation:pulse 1.8s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+  .hero h1{font-family:'Spectral',serif;font-size:clamp(30px,5.6vw,52px);font-weight:900;line-height:1.12;letter-spacing:-.5px;margin-bottom:20px;}
+  .hero h1 em{color:var(--gold-light);font-style:normal;}
+  .hero-sub{font-size:16.5px;line-height:1.75;color:rgba(244,239,228,0.82);max-width:600px;margin:0 auto 30px;}
+  .hero-sub strong{color:var(--cream);}
+  .hero-cta-wrap{margin-bottom:22px;}
+  .hero-tag{font-size:13px;color:rgba(244,239,228,0.6);margin-bottom:40px;}
+  .hero-tag strong{color:var(--gold-light);}
+  .hero-author{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(37,99,235,0.2);padding:10px 18px;border-radius:100px;font-size:13px;color:rgba(244,239,228,0.75);margin-bottom:40px;}
+  .hero-author b{color:var(--cream);}
+
+  /* ===== TICKER ===== */
+  .ticker{background:var(--gold);overflow:hidden;white-space:nowrap;padding:11px 0;}
+  .ticker-track{display:inline-block;animation:scroll 32s linear infinite;}
+  .ticker-track span{display:inline-block;padding:0 26px;font-size:12.5px;font-weight:700;color:#241a05;}
+  .ticker-track span::after{content:'•';margin-left:26px;opacity:.5;}
+  @keyframes scroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+  /* ===== 3 CAMINHOS (DORES) ===== */
+  .pains{background:var(--cream);}
+  .pains-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:980px;margin:0 auto;}
+  .pain-card{background:#fff;border-radius:16px;padding:30px 26px;box-shadow:0 4px 24px var(--shadow);border:1px solid rgba(37,99,235,0.12);}
+  .pain-card .ico{font-size:24px;margin-bottom:14px;display:block;}
+  .pain-card h3{font-family:'Spectral',serif;font-size:18px;font-weight:700;margin-bottom:10px;color:var(--text-dark);}
+  .pain-card p{font-size:14px;color:var(--text-mid);line-height:1.65;}
+  .pain-card .highlight{color:var(--green);font-weight:600;}
+
+  /* ===== MECANISMO ===== */
+  .mechanism{background:var(--deep);color:var(--cream);}
+  .mechanism .section-label{color:var(--gold-light);}
+  .mechanism .section-title{color:var(--cream);}
+  .mechanism-text{max-width:680px;margin:0 auto 48px;text-align:center;font-size:16px;line-height:1.8;color:rgba(244,239,228,0.78);}
+  .mechanism-text strong{color:var(--gold-light);}
+  .search-mock{max-width:640px;margin:0 auto;background:rgba(255,255,255,0.03);border:1px solid rgba(37,99,235,0.25);border-radius:16px;padding:6px;overflow:hidden;}
+  .search-mock-head{display:flex;gap:8px;padding:14px 18px;background:rgba(0,0,0,0.2);border-radius:12px 12px 0 0;}
+  .search-mock-head span{width:9px;height:9px;border-radius:50%;background:rgba(244,239,228,0.2);}
+  .search-mock-table{width:100%;border-collapse:collapse;}
+  .search-mock-table th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--gold-light);padding:14px 18px 8px;font-weight:700;}
+  .search-mock-table td{padding:12px 18px;font-size:13.5px;color:rgba(244,239,228,0.85);border-top:1px solid rgba(255,255,255,0.06);}
+  .search-mock-table td.miles{color:var(--green-light);font-weight:700;}
+  .search-mock-table tr:last-child td{border-radius:0 0 12px 12px;}
+
+  /* ===== 3 PASSOS ===== */
+  .steps{background:var(--cream);}
+  .steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;max-width:960px;margin:0 auto;}
+  .step-card{text-align:center;padding:10px;}
+  .step-num{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--green-light));color:var(--cream);display:flex;align-items:center;justify-content:center;font-family:'Spectral',serif;font-weight:800;font-size:19px;margin:0 auto 18px;}
+  .step-card h3{font-family:'Spectral',serif;font-size:17px;font-weight:700;margin-bottom:10px;}
+  .step-card p{font-size:14px;color:var(--text-mid);line-height:1.6;}
+
+  /* ===== ANTES/DEPOIS ===== */
+  .compare{background:var(--deep-2);color:var(--cream);}
+  .compare .section-label{color:var(--gold-light);}
+  .compare .section-title{color:var(--cream);}
+  .compare .section-desc{color:rgba(244,239,228,0.65);}
+  .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:820px;margin:0 auto;}
+  .compare-card{border-radius:16px;padding:28px 24px;}
+  .compare-card.before{background:rgba(163,92,92,0.08);border:1px solid rgba(163,92,92,0.35);}
+  .compare-card.after{background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.4);}
+  .compare-card .tag{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;display:block;}
+  .compare-card.before .tag{color:var(--red-soft);}
+  .compare-card.after .tag{color:var(--green-light);}
+  .compare-card .route{font-size:13px;color:rgba(244,239,228,0.6);margin-bottom:14px;}
+  .compare-card .price{font-family:'Spectral',serif;font-size:30px;font-weight:800;margin-bottom:10px;}
+  .compare-card.before .price{color:var(--red-soft);}
+  .compare-card.after .price{color:var(--green-light);}
+  .compare-card q{font-size:13.5px;color:rgba(244,239,228,0.7);font-style:italic;display:block;}
+  .compare-note{text-align:center;margin-top:28px;font-size:14px;color:rgba(244,239,228,0.6);max-width:520px;margin-left:auto;margin-right:auto;}
+  @media(max-width:560px){.compare-grid{grid-template-columns:1fr;}}
+
+  /* ===== BIO ===== */
+  .bio{background:var(--cream);}
+  .bio-inner{max-width:720px;margin:0 auto;text-align:center;}
+  .bio-name{font-family:'Spectral',serif;font-size:24px;font-weight:800;margin-bottom:6px;}
+  .bio-role{font-size:13px;color:var(--gold);font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:24px;}
+  .bio-text{font-size:15px;color:var(--text-mid);line-height:1.8;margin-bottom:32px;text-align:left;}
+  .bio-stats{display:flex;justify-content:center;gap:36px;flex-wrap:wrap;}
+  .bio-stat b{display:block;font-family:'Spectral',serif;font-size:26px;color:var(--green);}
+  .bio-stat span{font-size:12.5px;color:var(--text-mid);}
+
+  /* ===== PROVA SOCIAL ===== */
+  .social{background:var(--deep);color:var(--cream);}
+  .social .section-label{color:var(--gold-light);}
+  .social .section-title{color:var(--cream);}
+  .social .section-desc{color:rgba(244,239,228,0.65);}
+  .social-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:1000px;margin:0 auto;}
+  .testimonial{background:rgba(255,255,255,0.03);border:1px solid rgba(37,99,235,0.18);border-radius:14px;padding:22px;}
+  .testimonial .who{font-size:12.5px;color:var(--gold-light);font-weight:700;margin-bottom:10px;}
+  .testimonial q{font-size:14px;color:rgba(244,239,228,0.85);line-height:1.6;display:block;margin-bottom:10px;}
+  .testimonial .flag{font-size:12px;color:var(--green-light);font-weight:600;}
+  .social-handle{text-align:center;margin-top:32px;font-size:14px;color:var(--gold-light);font-weight:600;}
+
+  /* ===== OFERTA ===== */
+  .offer{background:var(--cream);}
+  .offer-box{max-width:520px;margin:0 auto;background:#fff;border-radius:20px;border:1.5px solid var(--gold);box-shadow:0 20px 60px var(--shadow);overflow:hidden;}
+  .offer-head{background:linear-gradient(135deg,var(--deep),var(--deep-2));color:var(--cream);text-align:center;padding:28px 24px;}
+  .offer-head .eco{font-size:12px;color:var(--gold-light);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+  .offer-head h3{font-family:'Spectral',serif;font-size:20px;font-weight:700;}
+  .offer-body{padding:28px 26px;}
+  .offer-item{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-bottom:1px dashed rgba(76,92,83,0.2);font-size:14px;}
+  .offer-item:last-of-type{border-bottom:none;}
+  .offer-item .name{color:var(--text-dark);font-weight:500;}
+  .offer-item .val{color:var(--text-mid);font-size:13px;}
+  .offer-total{display:flex;justify-content:space-between;padding:18px 0 6px;font-size:14px;color:var(--text-mid);}
+  .offer-total .val{text-decoration:line-through;}
+  .offer-price{text-align:center;padding:18px 0 8px;}
+  .offer-price .big{font-family:'Spectral',serif;font-size:40px;font-weight:800;color:var(--green);}
+  .offer-price .small{font-size:13px;color:var(--text-mid);}
+  .offer-save{text-align:center;font-size:13px;color:var(--gold);font-weight:700;margin-bottom:20px;}
+  .guarantee-block{
+    display:flex;align-items:center;gap:14px;background:rgba(37,99,235,0.06);
+    border:1px solid rgba(37,99,235,0.25);border-radius:14px;padding:16px 18px;margin-bottom:22px;
+  }
+  .guarantee-block .seal{
+    flex-shrink:0;width:52px;height:52px;border-radius:50%;
+    background:linear-gradient(135deg,var(--gold-light),var(--gold));
+    display:flex;align-items:center;justify-content:center;font-size:24px;
+  }
+  .guarantee-block .txt h4{
+    font-family:'Spectral',serif;font-size:14.5px;font-weight:700;color:var(--text-dark);margin-bottom:4px;
+  }
+  .guarantee-block .txt p{font-size:12.5px;color:var(--text-mid);line-height:1.5;margin-bottom:6px;}
+  .guarantee-block .txt .risk-phrase{font-size:12.5px;font-weight:700;color:var(--gold);font-style:italic;}
+  .offer-body .btn-cta{width:100%;}
+
+  /* ===== FAQ ===== */
+  .faq{background:var(--deep-2);color:var(--cream);}
+  .faq .section-label{color:var(--gold-light);}
+  .faq .section-title{color:var(--cream);}
+  .faq-list{max-width:700px;margin:0 auto;}
+  .faq-item{border-bottom:1px solid rgba(244,239,228,0.12);padding:20px 4px;}
+  .faq-item summary{cursor:pointer;list-style:none;font-weight:700;font-size:15px;color:var(--cream);display:flex;justify-content:space-between;align-items:center;gap:16px;}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:'+';font-size:22px;color:var(--gold-light);font-weight:400;flex-shrink:0;transition:transform .2s;}
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item p{margin-top:12px;font-size:14px;color:rgba(244,239,228,0.7);line-height:1.7;}
+
+  /* ===== FINAL ===== */
+  .final{background:linear-gradient(180deg,var(--deep) 0%,#081428 100%);color:var(--cream);text-align:center;}
+  .final-inner{max-width:600px;margin:0 auto;}
+  .final h2{font-family:'Spectral',serif;font-size:clamp(24px,4.2vw,34px);font-weight:800;margin-bottom:16px;line-height:1.25;}
+  .final p{font-size:14.5px;color:rgba(244,239,228,0.7);line-height:1.7;margin-bottom:28px;}
+  .final-meta{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:24px;font-size:12.5px;color:rgba(244,239,228,0.55);}
+
+  footer{background:#081428;color:rgba(244,239,228,0.4);text-align:center;padding:26px 20px;font-size:12px;}
+  footer b{color:var(--gold-light);}
+
+  .sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:50;background:var(--deep);padding:12px 16px;box-shadow:0 -8px 24px rgba(0,0,0,0.3);display:none;}
+  .sticky-cta .btn-cta{width:100%;padding:14px;font-size:15px;}
+  @media(max-width:640px){
+    .sticky-cta{display:block;}
+    body{padding-bottom:74px;}
+    section{padding:52px 18px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="urgency-bar">🔥 Somente nos próximos dias você terá um desconto de 71%</div>
+    <div class="hero-eyebrow">Imersão ao vivo <span class="dot"></span> 25 de julho <span class="dot"></span> 08h30</div>
+    <h1>Domine o <em>Seats.aero</em>: a ferramenta que te mostra passagens até 70% mais baratas no mundo todo</h1>
+    <p class="hero-sub">
+      Junte-se a mim, <strong>David (Milhas do Zero)</strong>, numa imersão prática e 100% ao vivo. Vou abrir
+      minha tela e te mostrar, na prática, como uso o <strong>Seats.aero</strong> — a ferramenta mais famosa do
+      mercado de milhas — pra achar passagens de executiva pelo preço de econômica. O conhecimento que você
+      precisa pra viajar mais barato pelo resto da vida, por menos de R$50.
+    </p>
+    <div class="hero-cta-wrap">
+      <a href="#oferta" class="btn-cta">QUERO GARANTIR MINHA VAGA →</a>
+    </div>
+    <p class="hero-tag">🔥 De <s>R$170</s> por <strong>R$49,90</strong> · 25 de julho · Lote 1</p>
+    <div class="hero-author"><b>David Nussbaum</b> — Fundador · Milhas do Zero</div>
+  </div>
+</section>
+
+<!-- ================= TICKER ================= -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>Carnaval 2026: passagens chegam a R$2.500 em alta temporada</span>
+    <span>Réveillon: as 2 últimas semanas de dezembro custam +R$480 em média</span>
+    <span>Comprar em cima da hora pode ser até 70% mais caro que a tabela</span>
+    <span>R$2,3 bilhões em dívida no caso 123 Milhas</span>
+    <span>185 milhões de brasileiros em programas de fidelidade. Maioria desiste</span>
+    <span>Tarifa média no Brasil em 2026: R$707, alta de 17,8% em 12 meses</span>
+    <span>Carnaval 2026: passagens chegam a R$2.500 em alta temporada</span>
+    <span>Réveillon: as 2 últimas semanas de dezembro custam +R$480 em média</span>
+    <span>Comprar em cima da hora pode ser até 70% mais caro que a tabela</span>
+    <span>R$2,3 bilhões em dívida no caso 123 Milhas</span>
+    <span>185 milhões de brasileiros em programas de fidelidade. Maioria desiste</span>
+    <span>Tarifa média no Brasil em 2026: R$707, alta de 17,8% em 12 meses</span>
+  </div>
+</div>
+
+<!-- ================= 3 CAMINHOS ================= -->
+<section class="pains">
+  <div class="section-label">A real</div>
+  <h2 class="section-title">Você já tentou tudo. E em algum momento, sempre paga caro.</h2>
+  <p class="section-desc">São 3 caminhos que o brasileiro tenta antes de gastar do mesmo jeito.</p>
+  <div class="pains-grid">
+    <div class="pain-card">
+      <span class="ico">💳</span>
+      <h3>Já comprou em cima da hora?</h3>
+      <p>"Já paguei R$2.800 num voo nacional só porque deixei pra véspera." Não é azar, não. <span class="highlight">O sistema cobra mais de quem precisa mais.</span></p>
+    </div>
+    <div class="pain-card">
+      <span class="ico">🔍</span>
+      <h3>Sempre paga o preço cheio?</h3>
+      <p>Você abre o Decolar, o Google Voos, ou vai direto na agência. Bate o preço, acha bom, fecha. <span class="highlight">Quem conhece o atalho paga até 70% menos no mesmo voo.</span></p>
+    </div>
+    <div class="pain-card">
+      <span class="ico">✈️</span>
+      <h3>Milhas paradas no programa?</h3>
+      <p>Você tem 50 mil, 100 mil pontos espalhados em vários programas. Falta vaga pros bons destinos, falta saldo pra um voo decente. E quando esquece, <span class="highlight">expiram.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MECANISMO ================= -->
+<section class="mechanism">
+  <div class="section-label">O quarto caminho</div>
+  <h2 class="section-title">Existe uma ferramenta que a maioria nunca ouviu falar.</h2>
+  <p class="mechanism-text">
+    Não depende de sorte, nem de comprar pelo lugar óbvio, nem de juntar milha por anos.
+    O <strong>Seats.aero</strong> escaneia em tempo real a disponibilidade de assentos-prêmio em dezenas de
+    programas de fidelidade ao redor do mundo — e mostra exatamente onde tem vaga, em qual cabine, por
+    quantas milhas. Quem conhece a ferramenta encontra em segundos. Quem não conhece, procura por horas e
+    ainda paga o preço cheio.
+  </p>
+  <div class="search-mock">
+    <div class="search-mock-head"><span></span><span></span><span></span></div>
+    <table class="search-mock-table">
+      <tr><th>Rota</th><th>Cia / Programa</th><th>Custo</th></tr>
+      <tr><td>GRU → CDG</td><td>Air France · Flying Blue</td><td class="miles">62.000 milhas</td></tr>
+      <tr><td>GIG → MIA</td><td>American · AAdvantage</td><td class="miles">42.500 milhas</td></tr>
+      <tr><td>BSB → LIS</td><td>TAP · Miles&Go</td><td class="miles">55.000 milhas</td></tr>
+      <tr><td>FOR → JFK</td><td>United · MileagePlus</td><td class="miles">70.000 milhas</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 3 PASSOS ================= -->
+<section class="steps">
+  <div class="section-label">Como funciona</div>
+  <h2 class="section-title">3 passos até a sua próxima emissão</h2>
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <h3>Abre a ferramenta</h3>
+      <p>Você acessa o Seats.aero e escolhe origem, destino e a classe que quer voar.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <h3>Vê a disponibilidade real</h3>
+      <p>A ferramenta cruza dezenas de programas e mostra onde tem vaga, com quantas milhas — na hora.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <h3>Emite direto na cia</h3>
+      <p>Vai no site da companhia ou do programa, aplica o filtro que aprendeu, e fecha a emissão.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ANTES/DEPOIS ================= -->
+<section class="compare">
+  <div class="section-label">Prova real</div>
+  <h2 class="section-title">Mesma rota, mesma data. Preços totalmente diferentes.</h2>
+  <p class="section-desc">A diferença não está no voo. Está em quem sabe usar a ferramenta certa.</p>
+  <div class="compare-grid">
+    <div class="compare-card before">
+      <span class="tag">✗ antes · comprou no site da cia</span>
+      <div class="route">São Paulo → Lisboa · classe executiva</div>
+      <div class="price">R$8.900</div>
+      <q>"Foi o que apareceu na busca direto no site. Tive que fechar."</q>
+    </div>
+    <div class="compare-card after">
+      <span class="tag">✓ depois · com Seats.aero</span>
+      <div class="route">São Paulo → Lisboa · mesma classe, achado em minutos</div>
+      <div class="price">55.000 milhas</div>
+      <q>"Achei a vaga na hora. Emiti direto no site do programa."</q>
+    </div>
+  </div>
+  <p class="compare-note">A diferença entre buscar no site da companhia e buscar pelo Seats.aero chega a até 70% de economia — sem alteração no voo, na cia ou na bagagem.</p>
+</section>
+
+<!-- ================= BIO ================= -->
+<section class="bio">
+  <div class="bio-inner">
+    <div class="section-label">Quem te ensina</div>
+    <div class="bio-name">David Nussbaum</div>
+    <div class="bio-role">Fundador · Milhas do Zero</div>
+    <p class="bio-text">
+      David Nussbaum, carioca, morador de São Paulo, 26 anos, apaixonado por viagens e desde 2022 no mercado
+      do turismo. Em 2020 começou a estudar sobre viagens e passagens aéreas, trabalhou em uma agência de
+      viagens, até conhecer o mundo das milhas aéreas durante a pandemia em 2021 — e descobrir que poderia
+      viajar de forma muito mais barata todos os anos, transformando isso em seu principal negócio. Desde
+      então já esteve em Dubai, Tailândia, Doha, Abu Dhabi, Jerusalém, Tel Aviv, Paris, Nova Iorque, Orlando,
+      Atenas, Santorini, Buenos Aires e muitos outros. Em julho de 2022 decidiu ajudar outras pessoas a
+      realizarem seus sonhos através das milhas.
+    </p>
+    <div class="bio-stats">
+      <div class="bio-stat"><b>+2.000</b><span>alunos e clientes</span></div>
+      <div class="bio-stat"><b>+20</b><span>destinos internacionais</span></div>
+      <div class="bio-stat"><b>+10</b><span>cabines executivas / primeira</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROVA SOCIAL ================= -->
+<section class="social">
+  <div class="section-label">Quem aplicou está aqui pra contar</div>
+  <h2 class="section-title">Conversas reais de alunos</h2>
+  <p class="section-desc">Compartilhando o que mudou depois de aprenderem a usar a ferramenta certa.</p>
+  <div class="social-grid">
+    <div class="testimonial">
+      <div class="who">Aluna MDZ · SP → RJ pela Latam</div>
+      <q>"Foi maravilhoso. Tenho muitos amigos que vão querer saber. Já estou voando pra RJ."</q>
+      <span class="flag">✈ passagem emitida</span>
+    </div>
+    <div class="testimonial">
+      <div class="who">Aline Rezende · @alinerezende.adv</div>
+      <q>"Obrigada @milhasdozer0 pela assessoria. A experiência está sendo incrível."</q>
+      <span class="flag">✈ executiva emitida</span>
+    </div>
+    <div class="testimonial">
+      <div class="who">Aluno MDZ · Executiva Qatar</div>
+      <q>"Mais um aluno viajando de executiva da Qatar! Quanto custa ficar de fora?"</q>
+      <span class="flag">✈ Qatar Business Class</span>
+    </div>
+    <div class="testimonial">
+      <div class="who">Aluno MDZ · Comunidade</div>
+      <q>"Graças ao meu mentor, já tenho 4 viagens com passagens emitidas."</q>
+      <span class="flag">✈ 4 viagens emitidas</span>
+    </div>
+  </div>
+  <p class="social-handle">Mais conversas no @milhasdozer0 →</p>
+</section>
+
+<!-- ================= OFERTA ================= -->
+<section class="offer" id="oferta">
+  <div class="section-label">Oferta completa</div>
+  <h2 class="section-title">Imersão Seats.aero — 25 de julho</h2>
+  <div class="offer-box">
+    <div class="offer-head">
+      <div class="eco">⚡ Economia de 87%</div>
+      <h3>Imersão ao vivo</h3>
+    </div>
+    <div class="offer-body">
+      <div class="offer-item"><span class="name">✓ Imersão ao vivo 3h com David Nussbaum</span><span class="val">valor R$197</span></div>
+      <div class="offer-item"><span class="name">✓ Demonstração ao vivo do Seats.aero</span><span class="val">valor R$89,90</span></div>
+      <div class="offer-item"><span class="name">✓ Sessão de perguntas ao vivo</span><span class="val">valor R$37</span></div>
+      <div class="offer-item"><span class="name">✓ Grupo de suporte pós-imersão</span><span class="val">valor R$27</span></div>
+      <div class="offer-item"><span class="name">✓ 7 dias de garantia incondicional</span><span class="val">valor R$22</span></div>
+      <div class="offer-total"><span>Custo Total</span><span class="val">R$372,90</span></div>
+      <div class="offer-price"><span class="big">R$49,90</span><br><span class="small">à vista no Pix ou 5x de R$11,05 no cartão</span></div>
+      <p class="offer-save">você economiza R$323,00</p>
+      <div class="guarantee-block">
+        <div class="seal">🛡️</div>
+        <div class="txt">
+          <h4>Certificado de Garantia</h4>
+          <p>Se o evento não for vantajoso ou você achar que não valeu a pena, devolvemos o valor investido.</p>
+          <span class="risk-phrase">O risco é meu. A oportunidade é SUA.</span>
+        </div>
+      </div>
+      <a href="https://pay.hub.la/lTsoFS27QyekdI5ViFvc" class="btn-cta">COMPRAR AGORA →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq">
+  <div class="section-label">Dúvidas</div>
+  <h2 class="section-title">Perguntas Frequentes</h2>
+  <div class="faq-list">
+    <details class="faq-item" open>
+      <summary>A imersão ficará gravada?</summary>
+      <p>Não. A imersão é 100% ao vivo e não ficará gravada. Esteja presente no dia 25 de julho às 08h30 para não perder nenhum conteúdo.</p>
+    </details>
+    <details class="faq-item">
+      <summary>O Seats.aero funciona pra qualquer destino?</summary>
+      <p>Funciona pras principais rotas nacionais e internacionais cobertas pelos programas de fidelidade mapeados. A imersão mostra como contornar rotas com restrição.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Preciso ter a versão paga do Seats.aero?</summary>
+      <p>Não. A versão gratuita já permite aplicar o que você aprende na imersão. A imersão mostra quando vale a pena migrar pra versão paga e quando não vale.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Quem nunca usou milhas consegue aplicar?</summary>
+      <p>Sim. A imersão começa do zero e mostra passo a passo, desde abrir a ferramenta pela primeira vez até emitir dentro do site da companhia.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Em quanto tempo aplico?</summary>
+      <p>Na própria manhã da imersão. Você acompanha ao vivo e sai pronto pra fazer sua primeira busca real no Seats.aero.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Posso pedir reembolso?</summary>
+      <p>Sim. Garantia incondicional de 7 dias. Não gostou, devolvemos sem perguntas.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Onde tiro minhas dúvidas?</summary>
+      <p>Durante a sessão de perguntas ao vivo com o David na própria imersão, e no grupo de suporte pós-imersão.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= FINAL ================= -->
+<section class="final">
+  <div class="final-inner">
+    <h2>Você pode continuar pagando o preço cheio por uma passagem aérea...</h2>
+    <p>Ou aprender a usar a ferramenta certa em uma manhã, por R$49,90.</p>
+    <a href="#oferta" class="btn-cta">QUERO VIAJAR BARATO →</a>
+    <div class="final-meta">
+      <span>✓ Acesso no dia do evento</span>
+      <span>✓ 7 dias de garantia</span>
+      <span>✓ Grupo de suporte</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>M</b> milhas do zero · david nussbaum<br>
+  © 2026 MILHAS DO ZERO. Todos os direitos reservados.
+</footer>
+
+<div class="sticky-cta">
+  <a href="https://pay.hub.la/lTsoFS27QyekdI5ViFvc" class="btn-cta">GARANTIR MINHA VAGA — R$49,90 →</a>
+</div>
+
+</body>
+</html>
