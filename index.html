@@ -84,6 +84,11 @@ fbq('track', 'PageView');
   .hero-sub{font-size:16.5px;line-height:1.75;color:rgba(244,239,228,0.82);max-width:600px;margin:0 auto 30px;}
   .hero-sub strong{color:var(--cream);}
   .hero-cta-wrap{margin-bottom:22px;}
+  .hero-photo{max-width:340px;margin:8px auto 28px;}
+  .hero-photo img{width:100%;border-radius:16px;display:block;}
+  @media(max-width:640px){
+    .hero-photo{max-width:260px;margin:4px auto 22px;}
+  }
   .hero-tag{font-size:13px;color:rgba(244,239,228,0.6);margin-bottom:40px;}
   .hero-tag strong{color:var(--gold-light);}
   .hero-author{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(37,99,235,0.2);padding:10px 18px;border-radius:100px;font-size:13px;color:rgba(244,239,228,0.75);margin-bottom:40px;}
@@ -243,6 +248,9 @@ fbq('track', 'PageView');
   <div class="hero-inner">
     <div class="hero-eyebrow">Imersão ao vivo <span class="dot"></span> 25 de julho <span class="dot"></span> 08h30</div>
     <h1>Domine o <em>Seats.aero</em>: a ferramenta que te mostra passagens até 70% mais baratas no mundo todo</h1>
+    <div class="hero-photo">
+      <img src="david-hero.png" alt="David Nussbaum - Milhas do Zero">
+    </div>
     <p class="hero-sub">
       Numa imersão prática e 100% ao vivo, vou abrir minha tela e te mostrar, na prática, como uso o
       <strong>Seats.aero</strong> — a ferramenta mais famosa do mercado de milhas — pra achar passagens de
